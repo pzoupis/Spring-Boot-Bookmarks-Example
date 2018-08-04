@@ -28,3 +28,4 @@
 ### Others ###
 .vscode
 bin
+tomcat.keystore
