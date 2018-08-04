@@ -41,7 +41,7 @@ public class BookmarkRestControllerTest {
 
     private String userName = "testuser";
 
-    private HttpMessageConverter mappingJackson2HttpMessageConverter;
+    private HttpMessageConverter<Object> mappingJackson2HttpMessageConverter;
 
     private Account account;
 
@@ -57,7 +57,7 @@ public class BookmarkRestControllerTest {
     private AccountRepository accountRepository;
 
     @Autowired
-    void setConverters(HttpMessageConverter<?>[] converters) {
+    void setConverters(HttpMessageConverter<Object>[] converters) {
 
         this.mappingJackson2HttpMessageConverter = Arrays.asList(converters).stream()
             .filter(hmc -> hmc instanceof MappingJackson2HttpMessageConverter)
