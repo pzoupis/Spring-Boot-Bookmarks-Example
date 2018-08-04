@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
-@RequestMapping("/{userId}/bookmarks")
+@RequestMapping("/bookmarks/{userId}")
 class BookmarkRestController {
     private final BookmarkRepository bookmarkRepository;
     private final AccountRepository accountRepository;
