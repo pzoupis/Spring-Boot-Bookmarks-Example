@@ -21,6 +21,7 @@ public class Bookmark {
 
     private String description;
 
+    @SuppressWarnings("unused")
     private Bookmark() { } // JPA only
 
     public Bookmark(final Account account, final String uri, final String description) {

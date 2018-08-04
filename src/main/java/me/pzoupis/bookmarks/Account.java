@@ -22,6 +22,7 @@ public class Account {
     @OneToMany(mappedBy = "account")
     private Set<Bookmark> bookmarks = new HashSet<>();
 
+    @SuppressWarnings("unused")
     private Account() { } // JPA only
 
     public Account(final String username, final String password) {
